@@ -1,59 +1,59 @@
 {
-  "date": "2026-11-04",
-  "time_collected_utc": "16:55",
+  "date": "2026-11-09",
+  "time_collected_utc": "16:50",
   "futures": {
-    "sp500":     {"change_pct": 1.55, "direction": "up"},
-    "nasdaq100": {"change_pct": 2.02, "direction": "up"},
-    "dow":       {"change_pct": 2.04, "direction": "up"},
+    "sp500":     {"change_pct": 0.65, "direction": "up"},
+    "nasdaq100": {"change_pct": 0.53, "direction": "up"},
+    "dow":       {"change_pct": 0.97, "direction": "up"},
     "sentiment": "bullish"
   },
   "etf_pe": {
-    "URTH": {"pe_ttm": 26.31, "proxy_for": "MSCI World",
-             "source": "iShares fact sheet (as of 2026-09-30); stockanalysis.com page returned stale data dated 2026-08-24"},
+    "URTH": {"pe_ttm": 21.11, "proxy_for": "MSCI World",
+             "source": "stockanalysis.com (page dated 2026-11-09)"},
     "EFA":  {"pe_ttm": 19.10, "proxy_for": "MSCI EAFE ex-US Developed",
-             "source": "iShares fact sheet (as of 2026-09-30)"}
+             "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"}
   },
   "rates_commodities": {
-    "treasury_10yr_pct": 4.96,
-    "crude_oil_usd": 93.57,
+    "treasury_10yr_pct": 4.87,
+    "crude_oil_usd": 87.96,
     "crude_oil_type": "WTI"
   },
   "macro_events": [
-    "Democrats won control of both the House and Senate in the midterms, easing election uncertainty but raising worries about AI and data center scrutiny; Trump said he would veto Democratic legislation",
-    "ADP private payrolls rose 86,000 in October (est. 75,000); October jobs report due Friday Nov 6 and CPI on Nov 10, with futures pricing about 81% odds of a Fed hike in December",
-    "Oil fell about 2.6% as Iran war de-escalation hopes grew, though four tankers hit mines in the Strait of Hormuz; RBA raised rates on Tuesday"
+    "Oil fell 3% to 5% on Iran peace hopes, though Secretary of State Rubio said talks appeared stalled; WTI near 88 and Brent near 93",
+    "Nvidia board opened an independent investigation after CEO Jensen Huang admitted to an affair with a woman US intelligence believes spied for China; AI chip stocks otherwise rebounded",
+    "October payrolls rose 165,000 on Friday; CPI due Tuesday Nov 10 and PPI Friday amid talk of possible Fed rate hikes"
   ],
   "sector_movers": {
     "leading": [
-      {"sector": "Technology", "change_pct": 2.30, "reason": "Mega-cap rebound (Microsoft, Apple, Alphabet up 5% to 7%) as AMD beat earnings; approximate, based on Nasdaq and stock moves"},
-      {"sector": "Health Care", "change_pct": 2.00, "reason": "Hospitals and insurers (HCA, Centene up 5% to 7%) on expected Medicaid and policy changes under a Democratic Congress; approximate"}
+      {"sector": "Technology", "change_pct": 2.40, "reason": "Chip rebound (AMD +11%, Applied Materials +10%, TSMC +6%) after last week's AI selloff; approximate, no sector index found, based on Nasdaq move"},
+      {"sector": "Consumer Discretionary", "change_pct": 2.00, "reason": "Risk-on rally with Tesla up about 5%; approximate, estimated from stock moves"}
     ],
     "lagging": [
-      {"sector": "Energy", "change_pct": -0.50, "reason": "Crude down about 2.6% on Iran de-escalation hopes and defense names softer; approximate"},
-      {"sector": "Consumer Staples", "change_pct": 0.50, "reason": "Defensive group lagging the risk-on rally after hitting a record high; approximate"}
+      {"sector": "Energy", "change_pct": -1.00, "reason": "Crude down 3% to 5% on Iran peace hopes; approximate, estimated from oil move"},
+      {"sector": "Consumer Staples", "change_pct": 0.50, "reason": "Defensive group lagging the risk-on rally; approximate, no sector data found"}
     ]
   },
   "global_markets": {
-    "europe": {"index": "STOXX600", "direction": "up", "change_pct": 0.44},
-    "asia":   {"index": "Nikkei",   "direction": "down", "change_pct": -1.42}
+    "europe": {"index": "DAX (STOXX600 not found, intraday)", "direction": "up", "change_pct": 1.38},
+    "asia":   {"index": "Nikkei (close not found)", "direction": "unknown", "change_pct": null}
   },
-  "open_focus": "Traders are focused on the relief rally after Democrats won Congress, whether the AI and chip rebound holds amid regulation worries, and Friday's October jobs report ahead of a possible December Fed hike.",
+  "open_focus": "Traders are focused on the AI and chip rebound against the Nvidia board probe, oil and Iran peace talks, and Tuesday's CPI report ahead of a possible Fed hike.",
   "market_prices": {
     "sp500": {
-      "prev_close": 7568.92,
-      "current":    7686.38,
-      "change_pct": 1.55,
-      "source_time_et": "10:30"
+      "prev_close": 7376.86,
+      "current":    7521.31,
+      "change_pct": 1.96,
+      "source_time_et": "10:34"
     },
     "rut": {
-      "prev_close": 2812.45,
-      "current":    2849.01,
-      "change_pct": 1.30,
-      "source_time_et": "10:30"
+      "prev_close": 2754.11,
+      "current":    2812.35,
+      "change_pct": 2.11,
+      "source_time_et": "10:34"
     },
     "vix": {
-      "prev_close": 20.83,
-      "current":    16.89
+      "prev_close": 25.64,
+      "current":    21.14
     }
   }
 }

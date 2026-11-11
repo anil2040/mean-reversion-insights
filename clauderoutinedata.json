@@ -1,53 +1,75 @@
 {
-  "date": "2026-11-10",
-  "time_collected_utc": "16:44",
+  "date": "2026-11-11",
+  "time_collected_utc": "16:45",
   "futures": {
-    "sp500":     {"change_pct": -0.49, "direction": "down"},
-    "nasdaq100": {"change_pct": -0.61, "direction": "down"},
-    "dow":       {"change_pct": null, "direction": "unknown"},
-    "sentiment": "bearish"
+    "sp500": {
+      "change_pct": null,
+      "direction": "unknown"
+    },
+    "nasdaq100": {
+      "change_pct": null,
+      "direction": "unknown"
+    },
+    "dow": {
+      "change_pct": null,
+      "direction": "unknown"
+    },
+    "sentiment": "neutral"
   },
   "etf_pe": {
-    "URTH": {"pe_ttm": 21.11, "proxy_for": "MSCI World",
-             "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"},
-    "EFA":  {"pe_ttm": 19.10, "proxy_for": "MSCI EAFE ex-US Developed",
-             "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"}
+    "URTH": {
+      "pe_ttm": 21.11,
+      "proxy_for": "MSCI World",
+      "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"
+    },
+    "EFA": {
+      "pe_ttm": 19.1,
+      "proxy_for": "MSCI EAFE ex-US Developed",
+      "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"
+    }
   },
   "rates_commodities": {
-    "treasury_10yr_pct": 4.96,
-    "crude_oil_usd": 85.38,
+    "treasury_10yr_pct": 4.98,
+    "crude_oil_usd": null,
     "crude_oil_type": "WTI"
   },
   "macro_events": [
-    "Hot October CPI: monthly inflation 0.4% with core prices rising again",
-    "Fed's Waller floated a possible half-point rate hike, lifting rate-hike bets",
-    "10-year Treasury yield jumped to about 4.96% after the CPI report"
+    "10-year Treasury yield rose to about 4.98% amid bond selloff and rate-hike worries",
+    "Treasury Secretary Bessent urged US and China to de-risk"
   ],
   "sector_movers": {
     "leading": [],
     "lagging": []
   },
   "global_markets": {
-    "europe": {"index": "STOXX600", "direction": "up", "change_pct": 0.9},
-    "asia":   {"index": "Nikkei (close not found; Advantest and Tokyo Electron fell, TOPIX rose)", "direction": "down", "change_pct": null}
+    "europe": {
+      "index": "STOXX600",
+      "direction": "unknown",
+      "change_pct": null
+    },
+    "asia": {
+      "index": "Nikkei",
+      "direction": "unknown",
+      "change_pct": null
+    }
   },
-  "open_focus": "Traders are focused on the hot CPI report and the rising odds of a Fed rate hike after Waller's half-point comment.",
+  "open_focus": "Traders are focused on rising Treasury yields and CoreWeave earnings lifting AI and chip stocks.",
   "market_prices": {
     "sp500": {
       "prev_close": 7549.94,
-      "current":    7512.94,
-      "change_pct": -0.49,
-      "source_time_et": "09:35"
+      "current": 7520.93,
+      "change_pct": -0.38,
+      "source_time_et": null
     },
     "rut": {
-      "prev_close": 2840.81,
-      "current":    null,
+      "prev_close": null,
+      "current": null,
       "change_pct": null,
-      "source_time_et": "09:35"
+      "source_time_et": null
     },
     "vix": {
       "prev_close": null,
-      "current":    null
+      "current": null
     }
   }
 }

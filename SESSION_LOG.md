@@ -591,6 +591,14 @@ mhs_history:          [{date, score, label}, ...] -- up to 252 entries, appended
 
 ## OPEN ITEMS / NEXT SESSION
 
+0. **Decided Nov 11 2026 (owner):**
+   - Macro Heat Score moves to a sliding (continuous) scale instead of fixed steps. Cause found Nov 11: VIX crossing 20
+     (Nov 9 to 10) and Fear & Greed crossing 35 (Nov 10 to 11) each jumped the score 8 points (78, 86, 94).
+     First check: the score at the dot-com peak (early 2000) from real FRED history. This unlocks MHS V1.0 for that session only.
+   - Dashboard redesign in its own session: the page is both a showcase and an input to the stock audits; lean toward
+     leading indicators (yield curve, credit spread, jobless claims, sentiment) and a more actionable AI read.
+   - Stay on Claude Haiku for the daily briefing (about $0.012 a run); no Gemini.
+
 1. **Watch the next push-triggered run (Thu Oct 1 2026, about 7:40 to 7:50 AM MT) with Haiku first:**
    - After the routine's push, a "Mean Reversion Insights Daily Briefing" run starts within about a minute (event shows "push").
    - Top of page: grey line "Data health OK · Briefing by Claude Haiku 4.5". The Actions log shows a Cost line of about $0.007

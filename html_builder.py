@@ -1141,7 +1141,19 @@ def build_html(briefing, ai_failed, ej_text, cnbc_text, yahoo_text,
     # Prices from the routine are used ONLY when the routine data is from today.
     # (Before: any file with prices was used, so a stale file could show
     # yesterday's prices as today's with no warning.)
-    routine_fresh_prices = bool(routine_fresh and mp and mp.get("sp500", {}).get("current"))
+    # Nov 10 2026: the routine can write null for a price it could not find (it wrote
+    # "current": null for the Russell 2000 and VIX), which crashed the page build.
+    # Use the routine prices only when every number the gauges need is a real number;
+    # otherwise use the live prices fetched by market.py for all three gauges.
+    def _is_num(d, k):
+        v = (d or {}).get(k)
+        return isinstance(v, (int, float)) and not isinstance(v, bool)
+    routine_fresh_prices = bool(
+        routine_fresh and mp
+        and _is_num(mp.get("sp500"), "current") and _is_num(mp.get("sp500"), "change_pct")
+        and _is_num(mp.get("rut"), "current") and _is_num(mp.get("rut"), "change_pct")
+        and _is_num(mp.get("vix"), "current")
+    )
 
     if routine_fresh_prices:
         # ── Use Claude Routine prices (accurate, collected by the Claude Routine at about 9:30 AM Boise time)
@@ -1162,7 +1174,7 @@ def build_html(briefing, ai_failed, ej_text, cnbc_text, yahoo_text,
         rut_col  = _idx_color(rut_lbl)
 
         _vix_cur  = float(_vix.get("current", 0))
-        _vix_prev = float(_vix.get("prev_close", _vix_cur))
+        _vix_prev = float(_vix["prev_close"]) if _is_num(_vix, "prev_close") else _vix_cur
         vix_val   = f'{_vix_cur:.2f}'
         vix_prev  = f'{_vix_prev:.2f}'
         vix_lbl   = _classify_vix(_vix_cur)

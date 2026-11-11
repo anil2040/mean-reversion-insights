@@ -250,8 +250,7 @@ def _screens_badges(screen_meta, health):
     out = ""
     by_src = {i["source"]: i for i in (health or [])}
     for key, name, short in (("si", "Dataroma 13F", "13F"),
-                             ("mf", "Magic Formula", "Magic Formula"),
-                             ("am", "Acquirer's Multiple", "Acquirer's Multiple")):
+                             ("mf", "Magic Formula", "Magic Formula")):
         it = by_src.get(name)
         if it and it["level"] != hl.OK:
             txt = it["detail"]
@@ -500,10 +499,9 @@ def _build_screens_html(si_tickers, mf_list, am_list):
     mf_footnote = "Rank = Greenblatt composite score (earnings yield + ROIC) -- no raw number published."
     am_footnote = "Rank order = lowest Acquirer's Multiple (EV/EBIT-style) = highest conviction."
 
+    # Acquirer's Multiple dropped Nov 10 2026: am_list is empty, so there are two screens.
     html = (
-        screen_row("🔵 All 3 Screens -- SI + MF + AM (highest conviction)",
-                   "".join(chip(t, "all3") for t in all3), len(all3))
-        + screen_row("🟢 2 of 3 Screens (strong convergence)",
+        screen_row("🟢 Both Screens -- Superinvestors + Magic Formula (strong convergence)",
                      "".join(chip(t, "two") for t in two3), len(two3))
         + screen_row("⭐ Superinvestors only (13F, 3+ managers)",
                      "".join(chip(t, "one") for t in si_only_filtered),
@@ -512,10 +510,6 @@ def _build_screens_html(si_tickers, mf_list, am_list):
             "🔮 Magic Formula only (Greenblatt, daily) -- rank order shown",
             "".join(chip(t, "mf", f"#{r}") for t, r in mf_only_order[:25]),
             len(mf_only_order), mf_footnote)
-        + screen_row(
-            "📐 Acquirer's Multiple only (Carlisle, daily) -- lowest multiple first",
-            "".join(chip(t, "am", f"({m}x)" if m != "-" else "") for t, m in am_only_order[:25]),
-            len(am_only_order), am_footnote)
     )
     return html, all3, two3, si_only_filtered, mf_only_order, am_only_order
 
@@ -611,13 +605,10 @@ def _build_market_context(fred_data, fg_data, mkt_data, mhs,
         f"VALUATION:CAPE={cape_val}(USonly,histAvg17x,98thPctileSince1881,src:multpl.com)"
         f"|URTH_PE={urth_disp}(MSCIWorldInclUS)"
         f"|EFA_PE={efa_disp}(ExUSdeveloped){erp_ctx}\n"
-        f"SCREENS_ALL3(highest_conviction):{tlist(all3)}\n"
-        f"SCREENS_2OF3(strong_convergence):{tlist(two3)}\n"
+        f"SCREENS_BOTH(SI_and_MF,strong_convergence):{tlist(two3)}\n"
         f"SCREENS_SUPER_INVESTORS_ONLY(Dataroma_13F_3plus_managers):{tlist(si_only, si_tickers)}\n"
-        f"SCREENS_MAGIC_FORMULA_ONLY(Greenblatt_not_in_SI_or_AM):{tlist(mf_only)}\n"
-        f"SCREENS_ACQUIRERS_MULTIPLE_ONLY(Carlisle_not_in_SI_or_MF):{tlist(am_only)}\n"
+        f"SCREENS_MAGIC_FORMULA_ONLY(Greenblatt_not_in_SI):{tlist(mf_only)}\n"
         f"MAGIC_FORMULA_FULL(all_ranked,Greenblatt_earnings_yield_plus_ROIC):{_tlist_mf_full(mf_list)}\n"
-        f"ACQUIRERS_MULTIPLE_FULL(all_by_multiple,Carlisle_EV_over_EBIT):{_tlist_am_full(am_list)}\n"
         f"SUPER_INVESTORS_FULL(all_by_count,Dataroma_13F_quarterly):{_tlist_si_full(si_tickers)}"
         + (f"\n{health_line}" if health_line else "")
     )
@@ -1660,7 +1651,7 @@ body{{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var
       <h2 style="margin:0;padding:0;border-bottom:none;">📋 Value Screens
         <span style="font-weight:400;color:var(--muted);font-size:.55rem;">
           SI = super-investors 13F (3+ managers, ~45d lag) ·
-          MF = Magic Formula (daily) · AM = Acquirer's Multiple (daily)
+          MF = Magic Formula (daily)
         </span>{screens_badges}
         <span style="display:block;font-weight:400;color:var(--muted);font-size:.55rem;margin-top:2px;">
           {cadence_13f}
@@ -1672,10 +1663,9 @@ body{{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var
       {screens_html}
       <div style="font-size:.67rem;color:#6b7280;background:#f0f9ff;border-radius:5px;
                   padding:6px 10px;line-height:1.6;margin-top:8px;">
-        <strong>How to use:</strong> Blue (All 3) = highest conviction.
-        Green (2 of 3) = strong convergence. Sorted by Magic Formula rank then Acquirer's Multiple.
+        <strong>How to use:</strong> Green (both screens) = strong convergence. Sorted by Magic Formula rank.
         Cross-reference with Finviz. Left Leg &lt;4 + MoS &gt;25% = strong setup.
-        13F lag: ~45 days after quarter end. Magic Formula and Acquirer's Multiple update daily.
+        13F lag: ~45 days after quarter end. Magic Formula updates daily.
       </div>
     </div>
   </div>

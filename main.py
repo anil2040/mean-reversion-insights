@@ -15,7 +15,7 @@
 # MODULE RESPONSIBILITY MAP (which file to edit for which bug):
 #   Macro indicators (rates, CPI, gold, oil, CAPE) -> fred.py
 #   VIX/SPX/PE/MHS/ERP issues                      -> market.py
-#   Dataroma/Magic Formula/Acquirer's Multiple     -> screens.py
+#   Dataroma/Magic Formula (AM dropped Nov 10) -> screens.py
 #   Email / Edward Jones                           -> news.py
 #   AI models (Haiku/Gemini) and AI output         -> ai_synthesis.py
 #   Freshness rules, warning banner logic          -> health.py
@@ -40,7 +40,7 @@
 #   2.  CNN Fear & Greed (inline below)
 #   3.  Market data: SPX, RUT, VIX, ETF PE (market.py)
 #   4.  MHS Macro Heat Score (market.py)
-#   5.  Dataroma 13F, Magic Formula, Acquirer's Multiple (screens.py)
+#   5.  Dataroma 13F, Magic Formula (screens.py; Acquirer's Multiple dropped Nov 10 2026)
 #   6.  Edward Jones, CNBC, Yahoo Morning Brief, WSJ Markets A.M., Axios Markets,
 #       Yardeni QuickTakes, Goldman Sachs Briefings, McClellan Chart In Focus (news.py)
 #   7.  Health checks on all of the above (health.py)
@@ -74,8 +74,7 @@ from timeutil import now_mt, to_mt
 import health as hl
 from fred    import fetch_fred_data, FRED_SERIES, _empty_row as _fred_empty_row
 from market  import (fetch_market_indicators, compute_mhs, PE_CONFIG, PE_LAST_UPDATED)
-from screens import (fetch_superinvestor_buys, fetch_magic_formula,
-                     fetch_acquirers_multiple)
+from screens import (fetch_superinvestor_buys, fetch_magic_formula)
 from news    import (scrape_edward_jones, fetch_cnbc_email,
                      fetch_yahoo_morning_brief, fetch_wsj_email,
                      fetch_axios_email, fetch_yardeni_email, fetch_goldman_email,
@@ -473,15 +472,15 @@ def _wrap_screens(cache):
             si, meta["si"] = {}, {"source": "none", "as_of": "", "note": "no data"}
             log("Dataroma 13F: no data anywhere", "❌")
 
-    # Magic Formula and Acquirer's Multiple: once per day (see _daily_screen)
+    # Magic Formula: once per day (see _daily_screen)
     mf, meta["mf"] = _daily_screen(
         cache, "screens_mf", "Magic Formula", fetch_magic_formula,
         lambda v: [tuple(x) for x in v] if isinstance(v[0], list)
         else [(t, i + 1) for i, t in enumerate(v)])
-    am, meta["am"] = _daily_screen(
-        cache, "screens_am", "Acquirer's Multiple", fetch_acquirers_multiple,
-        lambda v: [tuple(x) for x in v] if isinstance(v[0], list)
-        else [(t, "-") for t in v])
+    # Acquirer's Multiple dropped Nov 10 2026 (owner's decision): the site moved to
+    # email-link / Google sign-in only, so it cannot be logged into from a script.
+    # am stays an empty list so the rest of the pipeline keeps its shape.
+    am, meta["am"] = [], {"source": "dropped", "as_of": "", "note": "dropped Nov 10 2026"}
 
     return si, mf, am, meta
 
@@ -563,7 +562,6 @@ def _collect_health(today, fred_data, routine_data, routine_fresh, commit,
     items += hl.check_rate_crosscheck(fred_data, routine_data, routine_fresh)
     items.append(hl.check_13f(screen_meta["si"], len(si), today))
     items.append(hl.check_screen("Magic Formula", screen_meta["mf"], len(mf), today))
-    items.append(hl.check_screen("Acquirer's Multiple", screen_meta["am"], len(am), today))
     items.append(hl.check_news("Edward Jones", news_metas["ej"]))
     items.append(hl.check_news("CNBC Morning Squawk", news_metas["cnbc"]))
     items.append(hl.check_news("Yahoo Morning Brief", news_metas["yahoo"]))

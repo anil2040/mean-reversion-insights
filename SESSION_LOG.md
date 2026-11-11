@@ -1263,6 +1263,25 @@ and pull requests and on UTC schedules (Workbench version 71).
 
 ---
 
+### Nov 10 2026 (evening, Claude chat session)
+**Files changed:** html_builder.py, main.py, SESSION_LOG.md
+**Done:**
+- Page build crash fixed (pushed first, commit "Fix page build crash when the routine writes empty prices"):
+  the Nov 10 routine wrote null for the Russell 2000 and VIX, and html_builder.py crashed formatting them
+  (TypeError at the rut_val line). Routine prices are used only when every gauge value is a number;
+  otherwise the live prices from market.py are used for all three gauges. A manual run rebuilt the Nov 10 page (MHS 86).
+- Acquirer's Multiple dropped (owner's decision): acquirersmultiple.com now offers only "Continue with Google" or
+  "Email me a sign-in link", and the screener shows no rows unless signed in, so a script can never log in again.
+  main.py no longer fetches it or checks its health (am stays an empty list); the page shows
+  "Both Screens -- Superinvestors + Magic Formula" instead of All 3 / 2 of 3 / AM only; the hidden block drops
+  SCREENS_ALL3, SCREENS_ACQUIRERS_MULTIPLE_ONLY and ACQUIRERS_MULTIPLE_FULL and renames SCREENS_2OF3 to SCREENS_BOTH.
+  screens.py still holds fetch_acquirers_multiple (unused). Finviz extension 3.8.3 counts "of 2" and reads both names.
+  The audit skill's screens lift is now +1 for 1 of 2, +2 for 2 of 2.
+- Why the run emailed on Nov 5, 6 and 9: the Acquirer's Multiple saved copy (Oct 30) was over 7 days old, which is red
+  plus email by design. That stops now that the screen is dropped.
+
+---
+
 ## PLAYWRIGHT REFERENCE (for future use)
 
 When you need to scrape JavaScript-rendered pages, Playwright is the tool.

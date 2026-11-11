@@ -211,7 +211,7 @@
       "fallback_id": "DCOILWTICO",
       "prefix": "$",
       "insight": "Energy price \u00b7 >$85 = inflation pressure & input cost risk",
-      "current": "$88.3",
+      "current": "$87.1",
       "mo3": "$83.3",
       "mo12": "$60.6",
       "trend": "\u25b2",
@@ -234,7 +234,7 @@
       "prefix": "$",
       "no_pct": true,
       "insight": "Fear/inflation hedge \u00b7 rising+lowVIX = stealth fear signal",
-      "current": "$4,010",
+      "current": "$4,000",
       "mo3": "$4,468",
       "mo12": "$4,016",
       "trend": "\u25bc",
@@ -288,7 +288,7 @@
   },
   "fear_greed": {
     "value": {
-      "score": 37,
+      "score": 38,
       "label": "Fear",
       "color": "#e97316",
       "signal": "Pessimism elevated -- watch for entry setups",
@@ -304,24 +304,24 @@
   "market_indicators": {
     "value": {
       "vix": {
-        "value": "17.75",
+        "value": "17.41",
         "label": "NORMAL",
         "color": "#6b7280",
         "signal": "\u2192 Normal -- market calm, no stress signal",
         "prev": "19.46"
       },
       "spx": {
-        "value": "7,616",
-        "chg": "+1.27%",
+        "value": "7,642",
+        "chg": "+1.61%",
         "label": "RALLY",
         "color": "#057a55",
         "prev": "7,521"
       },
       "rut": {
-        "value": "2,845",
-        "chg": "+0.84%",
-        "label": "UP",
-        "color": "#86c440",
+        "value": "2,851",
+        "chg": "+1.05%",
+        "label": "RALLY",
+        "color": "#057a55",
         "prev": "2,821"
       },
       "urth_pe": 21.11,
@@ -332,7 +332,7 @@
       "efa_pe_source": "Claude Routine",
       "market_state": "OPEN",
       "market_status_label": "",
-      "pulse": "S&P +1.27% (RALLY) \u00b7 Russell +0.84% (UP) \u00b7 VIX 17.8 (NORMAL) -- broad strength -- be selective"
+      "pulse": "S&P +1.61% (RALLY) \u00b7 Russell +1.05% (RALLY) \u00b7 VIX 17.4 (NORMAL) -- broad strength -- be selective"
     },
     "fetched": "2026-11-11",
     "as_of": "2026-11-11"

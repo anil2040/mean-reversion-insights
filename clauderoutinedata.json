@@ -1,20 +1,20 @@
 {
-  "date": "2026-11-11",
-  "time_collected_utc": "16:45",
+  "date": "2026-11-12",
+  "time_collected_utc": "16:50",
   "futures": {
     "sp500": {
       "change_pct": null,
-      "direction": "unknown"
+      "direction": "down"
     },
     "nasdaq100": {
       "change_pct": null,
-      "direction": "unknown"
+      "direction": "down"
     },
     "dow": {
       "change_pct": null,
       "direction": "unknown"
     },
-    "sentiment": "neutral"
+    "sentiment": "bearish"
   },
   "etf_pe": {
     "URTH": {
@@ -29,17 +29,29 @@
     }
   },
   "rates_commodities": {
-    "treasury_10yr_pct": 4.98,
-    "crude_oil_usd": null,
+    "treasury_10yr_pct": 5.0,
+    "crude_oil_usd": 85.71,
     "crude_oil_type": "WTI"
   },
   "macro_events": [
-    "10-year Treasury yield rose to about 4.98% amid bond selloff and rate-hike worries",
-    "Treasury Secretary Bessent urged US and China to de-risk"
+    "10-year Treasury yield jumped back above 5% as oil gains and more Fed rate hikes are expected",
+    "Oil mixed after Trump said no Iran deal is needed, while Iran peace hopes pressured Brent"
   ],
   "sector_movers": {
-    "leading": [],
-    "lagging": []
+    "leading": [
+      {
+        "sector": "Energy",
+        "change_pct": null,
+        "reason": "higher oil prices"
+      }
+    ],
+    "lagging": [
+      {
+        "sector": "Technology",
+        "change_pct": null,
+        "reason": "Nvidia slide after CEO Jensen Huang exit news"
+      }
+    ]
   },
   "global_markets": {
     "europe": {
@@ -53,13 +65,13 @@
       "change_pct": null
     }
   },
-  "open_focus": "Traders are focused on rising Treasury yields and CoreWeave earnings lifting AI and chip stocks.",
+  "open_focus": "Traders are focused on Treasury yields back above 5% and the Nvidia selloff after CEO Jensen Huang's exit.",
   "market_prices": {
     "sp500": {
-      "prev_close": 7549.94,
-      "current": 7520.93,
-      "change_pct": -0.38,
-      "source_time_et": null
+      "prev_close": 7619.69,
+      "current": 7595.3,
+      "change_pct": -0.32,
+      "source_time_et": "11:45"
     },
     "rut": {
       "prev_close": null,

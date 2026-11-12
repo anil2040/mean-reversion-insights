@@ -16,8 +16,8 @@
       "sig": "Broad inflation re-igniting -- input costs rising across sectors, margin compression risk",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Core CPI": {
     "value": {
@@ -36,8 +36,8 @@
       "sig": "Re-heating -- service sector inflation erodes real returns and PE expansion",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_PCE Inflation": {
     "value": {
@@ -56,8 +56,8 @@
       "sig": "Fed's own preferred gauge well above target -- gap between Wall St optimism and reality",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Core PCE": {
     "value": {
@@ -76,8 +76,8 @@
       "sig": "Re-accelerating at 55% above Fed target -- hike risk rising, PE compression ahead",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_10Y Treasury": {
     "value": {
@@ -96,8 +96,8 @@
       "sig": "Approaching levels where bonds compete with equities on yield -- watch spread compression",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_2Y Treasury": {
     "value": {
@@ -116,8 +116,8 @@
       "sig": "Market pricing in zero rate cuts -- tight monetary policy embedded for the foreseeable future",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Yield Curve (10Y-2Y)": {
     "value": {
@@ -136,8 +136,8 @@
       "sig": "Nearly flat -- disinversion underway but not yet a steepening growth signal; watch direction",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Fed Funds Rate": {
     "value": {
@@ -156,8 +156,8 @@
       "sig": "Fed has been HIKING -- tightening restarted; pressure on long-duration valuations and leveraged balance sheets",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_HY Credit Spread": {
     "value": {
@@ -167,17 +167,17 @@
       "is_index": false,
       "group": "CREDIT",
       "insight": "Junk bond premium \u00b7 <3%=calm \u00b7 >6%=credit fear/stress",
-      "current": "3.34%",
-      "mo3": "2.70%",
-      "mo12": "3.02%",
+      "current": "3.30%",
+      "mo3": "2.72%",
+      "mo12": "3.09%",
       "trend": "\u25b2",
-      "date": "Nov 09 2026",
-      "obs_date": "2026-11-09",
+      "date": "Nov 11 2026",
+      "obs_date": "2026-11-11",
       "sig": "Tight spreads confirm equity calm is credit-supported -- watch for any widening as an early warning",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Unemployment": {
     "value": {
@@ -196,8 +196,8 @@
       "sig": "Near historical norm -- labor not a swing factor for macro direction today",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_WTI Crude Oil": {
     "value": {
@@ -211,16 +211,16 @@
       "fallback_id": "DCOILWTICO",
       "prefix": "$",
       "insight": "Energy price \u00b7 >$85 = inflation pressure & input cost risk",
-      "current": "$87.1",
-      "mo3": "$83.3",
-      "mo12": "$60.6",
+      "current": "$87.0",
+      "mo3": "$81.2",
+      "mo12": "$61.0",
       "trend": "\u25b2",
-      "date": "Nov 11 2026",
-      "obs_date": "2026-11-11",
+      "date": "Nov 12 2026",
+      "obs_date": "2026-11-12",
       "sig": "Moderate energy pricing -- not a dominant swing factor for the macro picture today"
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Gold Price": {
     "value": {
@@ -234,16 +234,16 @@
       "prefix": "$",
       "no_pct": true,
       "insight": "Fear/inflation hedge \u00b7 rising+lowVIX = stealth fear signal",
-      "current": "$4,000",
-      "mo3": "$4,468",
-      "mo12": "$4,016",
+      "current": "$3,874",
+      "mo3": "$4,420",
+      "mo12": "$3,996",
       "trend": "\u25bc",
-      "date": "Nov 11 2026",
-      "obs_date": "2026-11-11",
-      "sig": "Gold cooling -- taking some heat out of the inflation/fear narrative"
+      "date": "Nov 12 2026",
+      "obs_date": "2026-11-12",
+      "sig": "Gold retreating -- fear premium fading; risk appetite improving"
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Consumer Sentiment": {
     "value": {
@@ -263,8 +263,8 @@
       "sig": "Consumer deeply pessimistic -- spending contraction risk; watch retail and discretionary sectors",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_Shiller CAPE (US)": {
     "value": {
@@ -275,54 +275,54 @@
       "group": "VALUATION",
       "no_pct": true,
       "insight": "Cyclically Adj PE \u00b7 10yr smoothed \u00b7 hist avg 17x \u00b7 ~41 = 2nd highest ever",
-      "current": "39.7",
+      "current": "40.2",
       "mo3": "41.0",
       "mo12": "39.2",
       "trend": "\u25bc",
-      "date": "Nov 10 2026",
-      "obs_date": "2026-11-10",
-      "sig": "134% above hist avg -- top decile of all valuations since 1881; long-term mean reversion case strongly favors ex-US and deep value"
+      "date": "Nov 11 2026",
+      "obs_date": "2026-11-11",
+      "sig": "2.4x the 145yr avg -- only dot-com peak (44.2x, Dec 1999) was higher; 10yr forward returns historically near zero from this level"
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fear_greed": {
     "value": {
-      "score": 38,
+      "score": 43,
       "label": "Fear",
       "color": "#e97316",
       "signal": "Pessimism elevated -- watch for entry setups",
-      "prev_close": 33,
-      "prev_week": 34,
-      "prev_month": 44,
-      "prev_year": 30,
+      "prev_close": 37,
+      "prev_week": 20,
+      "prev_month": 45,
+      "prev_year": 35,
       "cached": false
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "market_indicators": {
     "value": {
       "vix": {
-        "value": "17.41",
+        "value": "17.51",
         "label": "NORMAL",
         "color": "#6b7280",
         "signal": "\u2192 Normal -- market calm, no stress signal",
-        "prev": "19.46"
+        "prev": "17.49"
       },
       "spx": {
-        "value": "7,642",
-        "chg": "+1.61%",
-        "label": "RALLY",
-        "color": "#057a55",
-        "prev": "7,521"
+        "value": "7,625",
+        "chg": "+0.07%",
+        "label": "FLAT",
+        "color": "#6b7280",
+        "prev": "7,619"
       },
       "rut": {
-        "value": "2,851",
-        "chg": "+1.05%",
-        "label": "RALLY",
-        "color": "#057a55",
-        "prev": "2,821"
+        "value": "2,830",
+        "chg": "-0.57%",
+        "label": "DOWN",
+        "color": "#e97316",
+        "prev": "2,846"
       },
       "urth_pe": 21.11,
       "urth_pe_stale": false,
@@ -332,10 +332,10 @@
       "efa_pe_source": "Claude Routine",
       "market_state": "OPEN",
       "market_status_label": "",
-      "pulse": "S&P +1.61% (RALLY) \u00b7 Russell +1.05% (RALLY) \u00b7 VIX 17.4 (NORMAL) -- broad strength -- be selective"
+      "pulse": "S&P +0.07% (FLAT) \u00b7 Russell -0.57% (DOWN) \u00b7 VIX 17.5 (NORMAL) -- indecisive -- focus on individual catalysts"
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "screens_si": {
     "value": {
@@ -440,7 +440,7 @@
       "CTSH": 4,
       "GDS": 2
     },
-    "fetched": "2026-11-11",
+    "fetched": "2026-11-12",
     "as_of": "2026-09-30"
   },
   "screens_mf": {
@@ -550,47 +550,47 @@
         26
       ],
       [
-        "DINO",
+        "HRMY",
         27
       ],
       [
-        "HPQ",
+        "DINO",
         28
       ],
       [
-        "WLY",
+        "HPQ",
         29
       ],
       [
-        "KNTNF",
+        "WLY",
         30
       ],
       [
-        "KBR",
+        "KNTNF",
         31
       ],
       [
-        "KFY",
+        "KBR",
         32
       ],
       [
-        "LULU",
+        "KFY",
         33
       ],
       [
-        "LUGDF",
+        "LULU",
         34
       ],
       [
-        "MH",
+        "LUGDF",
         35
       ],
       [
-        "MU",
+        "MH",
         36
       ],
       [
-        "OGC",
+        "MU",
         37
       ],
       [
@@ -626,15 +626,15 @@
         45
       ],
       [
-        "STRL",
+        "SGHC",
         46
       ],
       [
-        "SGHC",
+        "CI",
         47
       ],
       [
-        "CI",
+        "TNET",
         48
       ],
       [
@@ -646,8 +646,8 @@
         50
       ]
     ],
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "screens_am": {
     "value": [
@@ -1089,6 +1089,11 @@
       "date": "2026-11-11",
       "score": 94,
       "label": "EXTREME OVERHEATED"
+    },
+    {
+      "date": "2026-11-12",
+      "score": 97,
+      "label": "EXTREME OVERHEATED"
     }
   ],
   "fred_Jobless Claims (ICSA)": {
@@ -1100,17 +1105,17 @@
       "group": "LABOR",
       "no_pct": true,
       "insight": "Weekly initial claims \u00b7 <250K=healthy \u00b7 >300K=stress \u00b7 leads unemployment 6-8wk",
-      "current": "189,000",
-      "mo3": "200,000",
+      "current": "200,000",
+      "mo3": "212,000",
       "mo12": "228,000",
       "trend": "\u25bc",
-      "date": "Oct 31 2026",
-      "obs_date": "2026-10-31",
-      "sig": "4-wk avg: 194,750 | Very tight labor -- consumer spending well supported; wage inflation risk remains",
-      "ma4": 194750
+      "date": "Nov 07 2026",
+      "obs_date": "2026-11-07",
+      "sig": "4-wk avg: 195,250 | Very tight labor -- consumer spending well supported; wage inflation risk remains",
+      "ma4": 195250
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_GDP Growth YoY": {
     "value": {
@@ -1128,8 +1133,8 @@
       "obs_date": "2026-07-01",
       "sig": "At/above trend growth -- healthy macro backdrop; not a headwind for mean reversion"
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   },
   "fred_US Dollar Index (Broad)": {
     "value": {
@@ -1150,7 +1155,7 @@
       "sig": "Dollar stable -- currency not adding incremental tailwind or headwind today",
       "ma4": null
     },
-    "fetched": "2026-11-11",
-    "as_of": "2026-11-11"
+    "fetched": "2026-11-12",
+    "as_of": "2026-11-12"
   }
 }

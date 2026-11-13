@@ -1,87 +1,40 @@
 {
-  "date": "2026-11-12",
-  "time_collected_utc": "16:50",
+  "date": "2026-11-13",
+  "time_collected_utc": "16:52",
   "futures": {
-    "sp500": {
-      "change_pct": null,
-      "direction": "down"
-    },
-    "nasdaq100": {
-      "change_pct": null,
-      "direction": "down"
-    },
-    "dow": {
-      "change_pct": null,
-      "direction": "unknown"
-    },
-    "sentiment": "bearish"
+    "sp500": {"change_pct": null, "direction": "flat"},
+    "nasdaq100": {"change_pct": null, "direction": "down"},
+    "dow": {"change_pct": null, "direction": "up"},
+    "sentiment": "neutral"
   },
   "etf_pe": {
-    "URTH": {
-      "pe_ttm": 21.11,
-      "proxy_for": "MSCI World",
-      "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"
-    },
-    "EFA": {
-      "pe_ttm": 19.1,
-      "proxy_for": "MSCI EAFE ex-US Developed",
-      "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"
-    }
+    "URTH": {"pe_ttm": 21.11, "proxy_for": "MSCI World", "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"},
+    "EFA": {"pe_ttm": 19.1, "proxy_for": "MSCI EAFE ex-US Developed", "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"}
   },
   "rates_commodities": {
-    "treasury_10yr_pct": 5.0,
-    "crude_oil_usd": 85.71,
+    "treasury_10yr_pct": 5.15,
+    "crude_oil_usd": null,
     "crude_oil_type": "WTI"
   },
   "macro_events": [
-    "10-year Treasury yield jumped back above 5% as oil gains and more Fed rate hikes are expected",
-    "Oil mixed after Trump said no Iran deal is needed, while Iran peace hopes pressured Brent"
+    "10-year Treasury yield moved to 5.15% as traders weighed the producer price report",
+    "Producer price (wholesale inflation) data released; stocks turned lower after the report",
+    "Nvidia CEO Jensen Huang resignation continued to weigh on tech stocks"
   ],
   "sector_movers": {
-    "leading": [
-      {
-        "sector": "Energy",
-        "change_pct": null,
-        "reason": "higher oil prices"
-      }
-    ],
+    "leading": [],
     "lagging": [
-      {
-        "sector": "Technology",
-        "change_pct": null,
-        "reason": "Nvidia slide after CEO Jensen Huang exit news"
-      }
+      {"sector": "Technology", "change_pct": null, "reason": "Nvidia falls after CEO resignation, tech selloff at the open"}
     ]
   },
   "global_markets": {
-    "europe": {
-      "index": "STOXX600",
-      "direction": "unknown",
-      "change_pct": null
-    },
-    "asia": {
-      "index": "Nikkei",
-      "direction": "unknown",
-      "change_pct": null
-    }
+    "europe": {"index": "STOXX600", "direction": "unknown", "change_pct": null},
+    "asia": {"index": "Nikkei", "direction": "unknown", "change_pct": null}
   },
-  "open_focus": "Traders are focused on Treasury yields back above 5% and the Nvidia selloff after CEO Jensen Huang's exit.",
+  "open_focus": "Traders are focused on the 10-year Treasury yield near 5.15% after the producer price report and the tech selloff tied to Nvidia CEO Jensen Huang's resignation.",
   "market_prices": {
-    "sp500": {
-      "prev_close": 7619.69,
-      "current": 7595.3,
-      "change_pct": -0.32,
-      "source_time_et": "11:45"
-    },
-    "rut": {
-      "prev_close": null,
-      "current": null,
-      "change_pct": null,
-      "source_time_et": null
-    },
-    "vix": {
-      "prev_close": null,
-      "current": null
-    }
+    "sp500": {"prev_close": null, "current": null, "change_pct": null, "source_time_et": null},
+    "rut": {"prev_close": null, "current": null, "change_pct": null, "source_time_et": null},
+    "vix": {"prev_close": null, "current": null}
   }
 }

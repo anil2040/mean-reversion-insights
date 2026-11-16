@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-13",
-  "time_collected_utc": "16:52",
+  "date": "2026-11-16",
+  "time_collected_utc": "16:45",
   "futures": {
-    "sp500": {"change_pct": null, "direction": "flat"},
-    "nasdaq100": {"change_pct": null, "direction": "down"},
-    "dow": {"change_pct": null, "direction": "up"},
+    "sp500": {"change_pct": null, "direction": "unknown"},
+    "nasdaq100": {"change_pct": null, "direction": "unknown"},
+    "dow": {"change_pct": null, "direction": "unknown"},
     "sentiment": "neutral"
   },
   "etf_pe": {
@@ -12,26 +12,20 @@
     "EFA": {"pe_ttm": 19.1, "proxy_for": "MSCI EAFE ex-US Developed", "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"}
   },
   "rates_commodities": {
-    "treasury_10yr_pct": 5.15,
+    "treasury_10yr_pct": null,
     "crude_oil_usd": null,
     "crude_oil_type": "WTI"
   },
-  "macro_events": [
-    "10-year Treasury yield moved to 5.15% as traders weighed the producer price report",
-    "Producer price (wholesale inflation) data released; stocks turned lower after the report",
-    "Nvidia CEO Jensen Huang resignation continued to weigh on tech stocks"
-  ],
+  "macro_events": [],
   "sector_movers": {
     "leading": [],
-    "lagging": [
-      {"sector": "Technology", "change_pct": null, "reason": "Nvidia falls after CEO resignation, tech selloff at the open"}
-    ]
+    "lagging": []
   },
   "global_markets": {
     "europe": {"index": "STOXX600", "direction": "unknown", "change_pct": null},
     "asia": {"index": "Nikkei", "direction": "unknown", "change_pct": null}
   },
-  "open_focus": "Traders are focused on the 10-year Treasury yield near 5.15% after the producer price report and the tech selloff tied to Nvidia CEO Jensen Huang's resignation.",
+  "open_focus": null,
   "market_prices": {
     "sp500": {"prev_close": null, "current": null, "change_pct": null, "source_time_et": null},
     "rut": {"prev_close": null, "current": null, "change_pct": null, "source_time_et": null},

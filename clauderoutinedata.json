@@ -1,15 +1,32 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "time_collected_utc": "16:45",
   "futures": {
-    "sp500": {"change_pct": null, "direction": "unknown"},
-    "nasdaq100": {"change_pct": null, "direction": "unknown"},
-    "dow": {"change_pct": null, "direction": "unknown"},
+    "sp500": {
+      "change_pct": null,
+      "direction": "unknown"
+    },
+    "nasdaq100": {
+      "change_pct": null,
+      "direction": "unknown"
+    },
+    "dow": {
+      "change_pct": null,
+      "direction": "unknown"
+    },
     "sentiment": "neutral"
   },
   "etf_pe": {
-    "URTH": {"pe_ttm": 21.11, "proxy_for": "MSCI World", "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"},
-    "EFA": {"pe_ttm": 19.1, "proxy_for": "MSCI EAFE ex-US Developed", "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"}
+    "URTH": {
+      "pe_ttm": 21.11,
+      "proxy_for": "MSCI World",
+      "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"
+    },
+    "EFA": {
+      "pe_ttm": 19.1,
+      "proxy_for": "MSCI EAFE ex-US Developed",
+      "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"
+    }
   },
   "rates_commodities": {
     "treasury_10yr_pct": null,
@@ -22,13 +39,34 @@
     "lagging": []
   },
   "global_markets": {
-    "europe": {"index": "STOXX600", "direction": "unknown", "change_pct": null},
-    "asia": {"index": "Nikkei", "direction": "unknown", "change_pct": null}
+    "europe": {
+      "index": "STOXX600",
+      "direction": "unknown",
+      "change_pct": null
+    },
+    "asia": {
+      "index": "Nikkei",
+      "direction": "unknown",
+      "change_pct": null
+    }
   },
   "open_focus": null,
   "market_prices": {
-    "sp500": {"prev_close": null, "current": null, "change_pct": null, "source_time_et": null},
-    "rut": {"prev_close": null, "current": null, "change_pct": null, "source_time_et": null},
-    "vix": {"prev_close": null, "current": null}
+    "sp500": {
+      "prev_close": null,
+      "current": null,
+      "change_pct": null,
+      "source_time_et": null
+    },
+    "rut": {
+      "prev_close": null,
+      "current": null,
+      "change_pct": null,
+      "source_time_et": null
+    },
+    "vix": {
+      "prev_close": null,
+      "current": null
+    }
   }
 }

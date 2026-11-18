@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-17",
-  "time_collected_utc": "16:45",
+  "date": "2026-11-18",
+  "time_collected_utc": "16:43",
   "futures": {
     "sp500": {
       "change_pct": null,
-      "direction": "unknown"
+      "direction": "up"
     },
     "nasdaq100": {
       "change_pct": null,
-      "direction": "unknown"
+      "direction": "up"
     },
     "dow": {
       "change_pct": null,
-      "direction": "unknown"
+      "direction": "up"
     },
     "sentiment": "neutral"
   },
@@ -33,7 +33,11 @@
     "crude_oil_usd": null,
     "crude_oil_type": "WTI"
   },
-  "macro_events": [],
+  "macro_events": [
+    "FOMC minutes release",
+    "Nvidia earnings in focus for markets",
+    "10-year Treasury yield reported back above 5% on Nov 12 with more Fed hikes expected"
+  ],
   "sector_movers": {
     "leading": [],
     "lagging": []
@@ -50,7 +54,7 @@
       "change_pct": null
     }
   },
-  "open_focus": null,
+  "open_focus": "Traders are focused on the FOMC minutes and Nvidia earnings.",
   "market_prices": {
     "sp500": {
       "prev_close": null,

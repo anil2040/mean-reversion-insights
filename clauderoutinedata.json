@@ -1,72 +1,98 @@
 {
-  "date": "2026-11-24",
-  "time_collected_utc": "16:43",
+  "date": "2026-11-25",
+  "time_collected_utc": "16:50",
   "futures": {
     "sp500": {
-      "change_pct": null,
-      "direction": "unknown"
+      "change_pct": -1.54,
+      "direction": "down"
     },
     "nasdaq100": {
-      "change_pct": null,
-      "direction": "unknown"
+      "change_pct": -2.55,
+      "direction": "down"
     },
     "dow": {
-      "change_pct": null,
-      "direction": "unknown"
+      "change_pct": -0.82,
+      "direction": "down"
     },
-    "sentiment": "neutral"
+    "sentiment": "bearish"
   },
   "etf_pe": {
     "URTH": {
-      "pe_ttm": 21.11,
+      "pe_ttm": 20.34,
       "proxy_for": "MSCI World",
-      "source": "carried forward from 2026-11-09 stockanalysis.com value; no fresh source could be read today"
+      "source": "stockanalysis.com"
     },
     "EFA": {
-      "pe_ttm": 19.1,
+      "pe_ttm": 16.41,
       "proxy_for": "MSCI EAFE ex-US Developed",
-      "source": "carried forward from 2026-11-04 iShares fact sheet value; no fresh EFA source could be read today"
+      "source": "stockanalysis.com"
     }
   },
   "rates_commodities": {
-    "treasury_10yr_pct": null,
-    "crude_oil_usd": null,
+    "treasury_10yr_pct": 4.82,
+    "crude_oil_usd": 83.27,
     "crude_oil_type": "WTI"
   },
-  "macro_events": [],
+  "macro_events": [
+    "October PCE inflation rose to 3.8% year over year, with core at 3.3% versus 3.2% expected, keeping odds of a December Fed rate hike above 95%",
+    "The US proposed new tariffs of up to 20% on China, the EU and 12 other trading partners, expected to take effect in January at the earliest",
+    "Q3 GDP was revised up to a 4.3% annualized rate, above expectations of about 3.5%"
+  ],
   "sector_movers": {
-    "leading": [],
-    "lagging": []
+    "leading": [
+      {
+        "sector": "Consumer Staples",
+        "change_pct": 0.56,
+        "reason": "Defensive rotation away from AI names (XLP ETF shortly after the open)"
+      },
+      {
+        "sector": "Real Estate",
+        "change_pct": 0.02,
+        "reason": "Support from lower Treasury yields (XLRE ETF shortly after the open)"
+      }
+    ],
+    "lagging": [
+      {
+        "sector": "Technology",
+        "change_pct": -5.2,
+        "reason": "AI and chip sell-off led by Nvidia (S&P sector shortly after the open)"
+      },
+      {
+        "sector": "Industrials",
+        "change_pct": -2.04,
+        "reason": "Proposed new tariffs (XLI ETF shortly after the open)"
+      }
+    ]
   },
   "global_markets": {
     "europe": {
       "index": "STOXX600",
-      "direction": "unknown",
-      "change_pct": null
+      "direction": "down",
+      "change_pct": -0.4
     },
     "asia": {
       "index": "Nikkei",
-      "direction": "unknown",
-      "change_pct": null
+      "direction": "down",
+      "change_pct": -2.78
     }
   },
-  "open_focus": "Search returned no readable data today; market focus not determined.",
+  "open_focus": "Traders are watching whether the Nvidia-led AI and chip sell-off deepens as hot core inflation and new tariff proposals raise rate and growth worries ahead of the Thanksgiving holiday.",
   "market_prices": {
     "sp500": {
-      "prev_close": null,
-      "current": null,
-      "change_pct": null,
-      "source_time_et": null
+      "prev_close": 7201.09,
+      "current": 6996.36,
+      "change_pct": -2.84,
+      "source_time_et": "11:36"
     },
     "rut": {
-      "prev_close": null,
-      "current": null,
-      "change_pct": null,
-      "source_time_et": null
+      "prev_close": 2684.94,
+      "current": 2638.97,
+      "change_pct": -1.71,
+      "source_time_et": "11:36"
     },
     "vix": {
-      "prev_close": null,
-      "current": null
+      "prev_close": 26.36,
+      "current": 33.65
     }
   }
 }

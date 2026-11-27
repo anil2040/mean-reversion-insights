@@ -1,66 +1,66 @@
 {
-  "date": "2026-11-26",
-  "time_collected_utc": "16:45",
+  "date": "2026-11-27",
+  "time_collected_utc": "16:52",
   "futures": {
     "sp500": {
-      "change_pct": 0.7,
+      "change_pct": 1.6,
       "direction": "up"
     },
     "nasdaq100": {
-      "change_pct": 0.8,
+      "change_pct": 2.2,
       "direction": "up"
     },
     "dow": {
-      "change_pct": 0.5,
+      "change_pct": 1.3,
       "direction": "up"
     },
     "sentiment": "bullish"
   },
   "etf_pe": {
     "URTH": {
-      "pe_ttm": 20.35,
+      "pe_ttm": 20.48,
       "proxy_for": "MSCI World",
       "source": "stockanalysis.com"
     },
     "EFA": {
-      "pe_ttm": 16.56,
+      "pe_ttm": 16.8,
       "proxy_for": "MSCI EAFE ex-US Developed",
       "source": "stockanalysis.com"
     }
   },
   "rates_commodities": {
-    "treasury_10yr_pct": 4.85,
-    "crude_oil_usd": 84.51,
+    "treasury_10yr_pct": 4.93,
+    "crude_oil_usd": 83.21,
     "crude_oil_type": "WTI"
   },
   "macro_events": [
-    "US stock and bond markets are closed today for Thanksgiving, and Friday is a shortened session with stocks closing at 1:00 PM ET",
-    "Proposed new US tariffs on China, the EU and other trading partners were seen as less damaging than feared, helping global stocks rebound",
-    "Middle East supply risk is keeping oil elevated after a Houthi claim of an attack on Saudi Arabia's Ras Tanura oil hub"
+    "Markets price a 25 basis point Fed rate hike at the December 9 meeting as nearly certain",
+    "Houthi attacks on Saudi energy facilities keep Middle East supply risk in focus ahead of Sunday's OPEC+ meeting",
+    "Tokyo core CPI rose to 2.9% year over year in November, supporting expectations of a Bank of Japan rate hike in December"
   ],
   "sector_movers": {
     "leading": [
       {
-        "sector": "Materials",
-        "change_pct": 2.07,
-        "reason": "Rotation into non-tech sectors, no specific catalyst reported (Nov 25 close)"
+        "sector": "Communication Services",
+        "change_pct": 1.92,
+        "reason": "Broad tech-led rebound, with Meta higher"
       },
       {
-        "sector": "Real Estate",
-        "change_pct": 0.92,
-        "reason": "No specific catalyst reported, Treasury yields fell that day (Nov 25 close)"
+        "sector": "Consumer Discretionary",
+        "change_pct": 1.78,
+        "reason": "Early Black Friday online sales data, with Amazon and Tesla higher"
       }
     ],
     "lagging": [
       {
-        "sector": "Technology",
-        "change_pct": -0.83,
-        "reason": "AI and chip sell-off led by Nvidia after a credit rating warning (Nov 25 close)"
+        "sector": "Health Care",
+        "change_pct": -0.03,
+        "reason": "Vertex fell after the FDA extended a drug review"
       },
       {
-        "sector": "Health Care",
-        "change_pct": -0.56,
-        "reason": "No specific catalyst reported (Nov 25 close)"
+        "sector": "Utilities",
+        "change_pct": 0.03,
+        "reason": "Defensive shares trailed as money favored growth"
       }
     ]
   },
@@ -68,31 +68,31 @@
     "europe": {
       "index": "STOXX600",
       "direction": "up",
-      "change_pct": 1.66
+      "change_pct": 0.92
     },
     "asia": {
       "index": "Nikkei",
       "direction": "up",
-      "change_pct": 0.9
+      "change_pct": 2.11
     }
   },
-  "open_focus": "With US markets closed for Thanksgiving, traders are watching whether the global rebound on tariff relief and recovering tech shares holds into Friday's shortened session.",
+  "open_focus": "Traders are watching whether the AI and chip stock rebound holds through the shortened Black Friday session, which closes at 1:00 PM ET.",
   "market_prices": {
     "sp500": {
-      "prev_close": 7201.09,
-      "current": 7182.78,
-      "change_pct": -0.25,
-      "source_time_et": "11:45"
+      "prev_close": 7182.78,
+      "current": 7270.31,
+      "change_pct": 1.22,
+      "source_time_et": "10:56"
     },
     "rut": {
-      "prev_close": 2684.94,
-      "current": 2704.06,
-      "change_pct": 0.71,
-      "source_time_et": "11:45"
+      "prev_close": 2704.06,
+      "current": 2737.48,
+      "change_pct": 1.24,
+      "source_time_et": "10:40"
     },
     "vix": {
-      "prev_close": 26.36,
-      "current": 28.29
+      "prev_close": 28.29,
+      "current": 25.19
     }
   }
 }
